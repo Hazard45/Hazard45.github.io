@@ -2,15 +2,60 @@
 <html>
 <head>
     <link rel="stylesheet" href="bootstrap.min.css">
-    <script src="bootstrap.min.js"></script>
     <style>
         body{
             width: 80%;
             margin: 20px auto;
         }
+        #social {
+            position: absolute;
+            z-index: 999;
+            top: -10px;
+            right: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: white;
+            border: 1px dashed #ccc;
+            border-radius: 10px;
+            width: 120px;
+            height: 100px;
+            padding-left: 25px;
+            padding-top: 20px;
+        }
+            #social a {
+                display: inline-block;
+                transition: transform linear 0.1s;
+                text-decoration: none;
+                margin-bottom: 10px;
+            }
+                #social a:hover {
+                    transform: scale(1.2);
+                }
+                #social a:first-child {
+                    color: #0077B5;
+                }
+                #social a:last-child {
+                    color: #A62bA8;
+                }
     </style>
 </head>
 <body>
+    <div class="card">
+        <div class="card-header">
+            Printer State Tool
+        </div>
+        <div class="card-body">
+            <h5 class="card-title">
+                <a href="https://github.com/Hazard45/PrinterStateTool">PrinterStateTool</a>
+            </h5>
+            <p class="card-text">
+                Provides all installed and available printers information. The information includes printer queue info and printer properties info for every printer.<br />
+                PrinterState - Main library. Provides all functionality for getting printers information.<br />
+                AllPrintersStates - Console application. Provides all printers queue info.<br />
+                PrinterStateTool - Winforms application. Comfortable tool for getting information about every installed printer.<br />
+            </p>
+        </div>
+    </div>
+    <br />
     <div class="card">
         <div class="card-header">
             Armenian Text To Speech Library
@@ -101,6 +146,11 @@
                 Creational Patterns. Singleton, Prototype, Builder, Factory Method, Abstract Factory.
             </p>
         </div>
+    </div>
+    <div id="social">
+        <a target="_blank" href="https://www.linkedin.com/in/arsen-tadevosyan-3a97a395/">LinkedIn</a>
+        <br />
+        <a target="_blank" href="https://www.instagram.com/ehazar.d">Instagram</a>
     </div>
 </body>
 </html>
