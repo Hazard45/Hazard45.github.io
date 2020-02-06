@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html>
 <html>
 <head>
-    <title>Arsen \ .Net & CRM developer </title>
+    <title>Arsen ⚡ .Net & CRM developer </title>
     <link rel='icon' type='image/x-icon' href='/favicon.ico' />
+    <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Cinzel|Poiret+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="bootstrap.min.css">
     <style>
         html {
-          height: 100%;
+            height: 100%;
         }
 
         body {
@@ -14,10 +15,11 @@
             width: 80%;
             height: 100%;
             margin: 0 auto;
-            font-size: 16px;
-            font-family: 'Tw Cen MT';
+            font-size: 17px;
+            font-family: 'Poiret One', cursive;
             background-repeat: no-repeat;
             background-attachment: fixed;
+            font-weight: bold;
         }
 
         #box {
@@ -33,12 +35,11 @@
             margin-bottom: 20px;
             background-image: linear-gradient(90deg, #f0f8ec, #eaf1fa);
             border: none;
-            width: 420px;
+            width: 460px;
         }
 
         .header {
             font-size: 20px;
-            font-variant: small-caps;
             border: none;
         }
             .header:hover {
@@ -69,7 +70,6 @@
                 vertical-align: middle;
                 transition: all linear 0.2s;
             }
-
                 #social div:hover {
                     cursor: pointer;
                 }
@@ -80,7 +80,6 @@
                     color: #0077B5;
                     background-color: transparent;
                 }
-
                     #social div:first-child:hover {
                         color: white;
                         background-color: #0077B5;
@@ -92,7 +91,6 @@
                     color: #9d4cb1;
                     background-color: transparent;
                 }
-
                     #social div:last-child:hover {
                         color: white;
                         background-image: linear-gradient(-90deg, #5e67e3, #f63847);
@@ -113,9 +111,9 @@
             <div class="card-body">
                 <p class="card-text">
                     Provides all installed and available printers information. The information includes printer queue info and printer properties info for every printer.<br />
-                    PrinterState - Main library. Provides all functionality for getting printers information.<br />
-                    AllPrintersStates - Console application. Provides all printers queue info.<br />
-                    PrinterStateTool - Winforms application. Comfortable tool for getting information about every installed printer.<br />
+                    ● PrinterState - Class library. Provides all functionality for getting printers information<br />
+                    ● AllPrintersStates - Console application. Provides all printers queue info<br />
+                    ● PrinterStateTool - Winforms application. Comfortable tool for getting information about every installed printer<br />
                 </p>
             </div>
         </div>
@@ -125,9 +123,10 @@
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    This library provides Text to Speech functionality for Armenian language.<br />
-                    The library allows to convert armenian words to speech with different speed.<br />
-                    You can use Visualizer to test the library.
+                    As we know, there is no Text-to-Speech functionality for Armenian language in Windows.<br />
+                    The application uses System.Speech.Synthesis library, which supports Text-To-Speech functionality for English language and provides it for Armenian.<br />
+                    ● ArmenianTextToSpeech - Class library. Provides Text-to-Speech functionality for Armenian language. It allows to convert armenian words to speech with different speed<br />
+                    ● Visualizer - Winforms application. Comfortable tool for testing the library
                 </p>
             </div>
         </div>
@@ -138,41 +137,55 @@
             <div class="card-body">
                 <p class="card-text">
                     Asterisk PBX connector tool. Uses AsterNET library.<br />
-                    Allows to set manager connection with Asterisk, originate and decline calls, set and get DND state, execute CLI commands, catch and view all events.
+                    Allows to:<br />
+                    ● Set manager connection with Asterisk<br />
+                    ● Originate and decline calls<br />
+                    ● Set and get DND state<br />
+                    ● Execute CLI commands<br />
+                    ● Catch and view all events
                 </p>
             </div>
         </div>
         <div class="card newCard">
             <div class="card-header header" onclick="openUrl('https://github.com/Hazard45/CrmTestEmailSender')">
-                Crm Test Email Sender Tool
+                CRM Test Email Sender Tool
             </div>
             <div class="card-body">
                 <p class="card-text">
                     Sends email message from one CRM user to another users. Works for Microsoft Dynamics CRM (2011-2016) and Dynamics 365.<br />
-                    Sends email message with Subject "Test subject [current_date]" and Description "Test message [current date]" to provided users and shows sent email Id if succeed.
+                    ● You should provide CRM users IDs<br />
+                    ● Email subject is fixed: "Test subject [current_date]"<br />
+                    ● Email description is fixed: "Test message [current date]"<br />
+                    ● Returns sent email ID if succeed
                 </p>
             </div>
         </div>
         <div class="card newCard">
             <div class="card-header header" onclick="openUrl('https://github.com/Hazard45/CrmSolutionsInfoHelper')">
-                Crm Solutions Info Helper Tool
+                CRM Solutions Info Helper Tool
             </div>
             <div class="card-body">
                 <p class="card-text">
                     Shows information about active custom solutions imported in CRM. Works for Microsoft Dynamics CRM (2011-2016) and Dynamics 365.<br />
-                    Available information about solutions: name, version, is managed or not, date installed, date modified.
+                    Provides:<br />
+                    ● Solution name<br />
+                    ● Solution version<br />
+                    ● Is solution managed or not<br />
+                    ● Solution installation date<br />
+                    ● Solution modification date
                 </p>
             </div>
         </div>
         <div class="card newCard">
             <div class="card-header header" onclick="openUrl('https://github.com/Hazard45/CrmMaxRecordsForExportToExcelEditor')">
-                Crm Max Records For Export To Excel Editor Tool
+                CRM Max Records For Export To Excel Editor Tool
             </div>
             <div class="card-body">
                 <p class="card-text">
-                    Edits the max count of records in CRM page for exporting to Excel. Works for Microsoft Dynamics CRM (2011-2016) and Dynamics 365.<br />
-                    By default, you can export a maximum of 10,000 records from Microsoft Dynamics CRM to an Excel worksheet by using the "Static worksheet with records from all pages in the current view" feature.<br />
-                    If you export more than 10,000 records, only the first 10,000 records are exported. You do not receive a warning message that lets you know that only the first 10,000 records were exported.
+                    Edits the max count of records in CRM page for exporting to Excel. Works for Microsoft Dynamics CRM (2011-2016) and Dynamics 365.
+                    By default, you can export a maximum of 10,000 records from Microsoft Dynamics CRM to an Excel worksheet by using the "Static worksheet with records from all pages in the current view" feature.
+                    If you export more than 10,000 records, only the first 10,000 records are exported. You do not receive a warning message that lets you know that only the first 10,000 records were exported.<br />
+                    ● You should provide new maximum records count for Excel export
                 </p>
             </div>
         </div>
@@ -183,7 +196,12 @@
             <div class="card-body">
                 <p class="card-text">
                     Design patterns learning course for C#.<br />
-                    Creational Patterns. Singleton, Prototype, Builder, Factory Method, Abstract Factory.
+                    Creational Patterns:<br />
+                    ● Singleton<br />
+                    ● Prototype<br />
+                    ● Builder<br />
+                    ● Factory Method<br />
+                    ● Abstract Factory
                 </p>
             </div>
         </div>
